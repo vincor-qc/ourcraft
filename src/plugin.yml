@@ -1,0 +1,8 @@
+name: Ourcraft
+version: 0.1
+author: Vincent Qi
+main: main.Ourcraft
+commands:
+  debug:
+    description: Debug Command
+    usage: /<command>

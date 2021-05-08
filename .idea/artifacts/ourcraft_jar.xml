@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ourcraft:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ourcraft_jar</output-path>
+    <root id="archive" name="ourcraft.jar">
+      <element id="module-output" name="ourcraft" />
+      <element id="extracted-dir" path="$USER_HOME$/Code/Spigot/spigot-1.16.5.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
