@@ -5,4 +5,7 @@ main: main.Ourcraft
 commands:
   debug:
     description: Debug Command
-    usage: /<command>
+    usage: /debug <?args>
+  ourinventory:
+    description: Opens Our Inventory
+    usage: /ourinventory
