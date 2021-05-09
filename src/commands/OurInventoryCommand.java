@@ -17,7 +17,7 @@ public class OurInventoryCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String s, String[] strings) {
         if (sender instanceof Player) {
-            // TODO: Make this open Our Inventory
+            Ourcraft.inv.openInventory(((Player) sender).getPlayer());
         } else {
             Bukkit.broadcastMessage("SENDER NOT INSTANCE OF PLAYER");
         }

@@ -4,6 +4,7 @@ import main.Ourcraft;
 import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.player.PlayerExpChangeEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 
@@ -19,5 +20,15 @@ public class PlayerListener implements Listener {
     public void onPLayerExpChange(PlayerExpChangeEvent event) {
         Bukkit.broadcastMessage(String.valueOf(event.getAmount()));
         Ourcraft.ourExp += event.getAmount();
+    }
+
+    @EventHandler
+    public void onInventoryClick(InventoryClickEvent event) {
+        if (event.getSlot() > 35 && event.getSlot() < 45) {
+            Bukkit.broadcastMessage("CLICK CLEARED");
+            event.setCancelled(true);
+
+            // TODO: Individual functions
+        }
     }
 }
